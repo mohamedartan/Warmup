@@ -6,7 +6,15 @@
         }
     }
 	function negativeAll(array) {
-	 //your code here
+		var empArr = [];
+		each(array, function (item, i) {
+			if(item >= 0){
+				empArr.push(item * -1);
+			}else{
+			empArr.push(item);
+		}
+		})
+		return empArr;
 	}
 
 	/*
@@ -23,5 +31,11 @@
         }
     }
 	function multiplyOfFour(array) {
-	    //your code here
+		var temArr = [];
+	    each(array, function (item, i) {
+	    	if(i % 4 === 0){
+	    	   temArr.push(item * 4)
+	    	}
+	    })
+	    return temArr;
 	}
