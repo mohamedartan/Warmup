@@ -4,17 +4,6 @@
 	// 25 ===> 30
 	// 37 ===> 40
  function closestMultipleOf10(num) {
- 	if(num % 10 < 2.5){
- 		do{num = num - num
- 			while(num % 10 < 2.5)
- 		  }
- 	  
- 	}else if(num % 10 === 2.5){
- 		do{num = num + num
- 			while(num % 10 > 2.5)
- 		  }
- 	}else{
- 		num = num +5
- 	}
+ 	return Math.round(num / 10 ) * 10
  	
  }
